@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/amountTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Amount:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/amountInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/numOfPaxTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Num of Pax:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/numOfPaxInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Num of Pax"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/svsToggle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="NO SVS"
+            android:textOff="SVS"
+            android:textOn="NO SVS"/>
+
+        <ToggleButton
+            android:id="@+id/gstToggle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="GST"
+            android:textOff="NO GST"
+            android:textOn="GST"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/discountTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Discount:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/discountInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Discount (%)"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/paymentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment Method:"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/paymentRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/cashRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/payNowRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PayNow" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/splitButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Split"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/totalBillTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/eachPaysTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+
+</LinearLayout>
